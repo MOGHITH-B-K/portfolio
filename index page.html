@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moghith B K | Data Science Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom CSS for Glassmorphism backdrop-filter and some base styles not easily done with Tailwind */
+    body {
+      background: url('premium_photo-1683309565422-77818a287060.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Slightly darker overlay for better contrast */
+      z-index: -1;
+    }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.05); /* Very subtle transparent background */
+      backdrop-filter: blur(15px) saturate(160%); /* Stronger blur, slightly less saturation */
+      -webkit-backdrop-filter: blur(15px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.08); /* Even subtler border */
+    }
+    .card-glass {
+      background: rgba(255, 255, 255, 0.02); /* Almost transparent for cards */
+      backdrop-filter: blur(12px) saturate(150%);
+      -webkit-backdrop-filter: blur(12px) saturate(150%);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    /* Specific glassmorphism for contact cards - slightly more prominent */
+    .contact-card-glass {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(18px) saturate(170%);
+        -webkit-backdrop-filter: blur(18px) saturate(170%);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slide-up {
+      animation: slideUp 0.8s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="h-full font-sans text-white overflow-x-hidden">
+  <div class="container max-w-4xl mx-auto my-8 p-8 rounded-2xl shadow-2xl glass-effect">
+    <header class="text-center mb-8">
+      <h1 class="text-5xl text-gray-200 font-bold mb-2">MOGHITH B K</h1>
+      <p class="text-lg text-gray-300">B.Tech in Artificial Intelligence & Data Science at Takshashila University</p>
+    </header>
+
+    <nav class="flex justify-center flex-wrap gap-4 my-8">
+      <a href="#about" class="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-gray-100 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">About</a>
+      <a href="#skills" class="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-gray-100 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">Skills</a>
+      <a href="#projects" class="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-gray-100 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">Projects</a>
+      <a href="#certificates" class="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-gray-100 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">Certificates</a>
+      <a href="#contact" class="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-gray-100 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">Contact</a>
+    </nav>
+
+    <div class="flex justify-center my-8">
+      <a href="resume MOGHITH B K(1).pdf" target="_blank" class="px-8 py-3 bg-blue-700 text-gray-100 font-semibold text-lg rounded-lg transition-all duration-300 hover:bg-blue-800 transform hover:scale-105">View Resume</a>
+    </div>
+
+    <section id="about" class="mb-12 animate-slide-up">
+      <h2 class="text-3xl text-blue-400 font-semibold mb-4">About Me</h2>
+      <p class="text-md text-gray-200">I’m Moghith B K, an aspiring Data Scientist with strong passion for solving problems using data. I'm currently pursuing my B.Tech in Artificial Intelligence and Data Science at Takshashila University. I love working with Python, building models, and gaining insights from data.</p>
+    </section>
+
+    <section id="skills" class="mb-12 animate-slide-up">
+      <h2 class="text-3xl text-blue-400 font-semibold mb-4">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">C++</div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">Java</div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">Python</div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">MySQL</div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">Excel</div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">Power BI</div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">Data Visualization (Matplotlib, Seaborn)</div>
+      </div>
+    </section>
+
+    <section id="projects" class="mb-12 animate-slide-up">
+      <h2 class="text-3xl text-blue-400 font-semibold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <h3 class="text-xl font-bold mb-2">Campus Event Dashboard</h3>
+          <p class="text-gray-300">Created a dashboard for managing university events with real-time updates, deadlines, and registration info. Includes WhatsApp & Google Form integration for admin use.</p>
+          <a href="projects/campus-dashboard.html" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Details</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <h3 class="text-xl font-bold mb-2">Student Performance Analyzer</h3>
+          <p class="text-gray-300">Analyzed student data to predict outcomes using machine learning models. Used pandas, scikit-learn, and data visualization libraries.</p>
+          <a href="projects/student-performance.html" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Details</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="mb-12 animate-slide-up">
+      <h2 class="text-3xl text-blue-400 font-semibold mb-4">Certificates</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">ANDROID DEVELOPER VIRTUAL INTERNSHIP</p>
+          <a href="certificates\Moghith   B K  568969_page-0001.jpg" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">PYTHON FOR DATA SCIENCE-NPTEL</p>
+          <a href="certificates\Python for Data Science_page-0001.jpg" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">Xebia XE-CONCLAVE HACKATHON</p>
+          <a href="certificates\xebia.jpg" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">WORKSHOP CERTIFICATE OpenCV: TRANSFORMING IMAGES INTO INSIGHTS</p>
+          <a href="certificates\vel workshop.jpg" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">Data Visualization with R</p>
+          <a href="certificates\Data Visualization with R.pdf" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">Introduction to Cloud</p>
+          <a href="certificates\Introduction to Cloud.pdf" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">Machine Learning with Python</p>
+          <a href="certificates\Machine Learning with Python.pdf" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+        <div class="p-5 border-l-4 border-blue-500 rounded-lg shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl card-glass">
+          <p class="text-gray-300">SQL and Relational Databases 101</p>
+          <a href="certificates\SQL and Relational Databases 101.pdf" target="_blank" class="text-blue-400 font-bold inline-block mt-4 hover:underline">View Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-12 animate-slide-up">
+      <h2 class="text-3xl text-blue-400 font-semibold mb-6 text-center">Get in Touch</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl contact-card-glass flex flex-col items-center justify-center text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-300 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <h3 class="text-xl font-bold text-gray-100 mb-2">Email Me</h3>
+          <p class="text-gray-300">Reach out for collaborations or inquiries.</p>
+          <a href="mailto:bkmoghith@gmail.com" class="text-blue-300 font-semibold mt-3 hover:underline">bkmoghith@gmail.com</a>
+        </div>
+
+        <div class="p-6 rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl contact-card-glass flex flex-col items-center justify-center text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-300 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.6 17.6c-1.3-1.3-3.1-1.3-4.4 0L12 14.4c-1.3 1.3-3.1 1.3-4.4 0L4.4 8.8c-1.3-1.3-1.3-3.1 0-4.4L8.8 0c1.3-1.3 3.1-1.3 4.4 0l3.2 3.2c1.3 1.3 1.3 3.1 0 4.4L17.6 17.6zM12 12h.01M17 12h.01M7 12h.01" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 16a2 2 0 00-2-2h-3.2L12 17.6c-1.3 1.3-3.1 1.3-4.4 0L4.4 14H2a2 2 0 00-2 2v2a2 2 0 002 2h2v4l4-4h8l4 4v-4h2a2 2 0 002-2v-2z" />
+          </svg>
+          <h3 class="text-xl font-bold text-gray-100 mb-2">Message Me (WhatsApp)</h3>
+          <p class="text-gray-300">Quickest way to get in touch!</p>
+          <a href="https://wa.me/919003591669" target="_blank" class="text-blue-300 font-semibold mt-3 hover:underline">+91 9003591669</a>
+        </div>
+
+        <div class="p-6 rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl contact-card-glass flex flex-col items-center justify-center text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-300 mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <h3 class="text-xl font-bold text-gray-100 mb-2">Connect on LinkedIn</h3>
+          <p class="text-gray-300">Let's grow our professional network.</p>
+          <a href="https://in.linkedin.com/in/moghith-b-k-66b933309" target="_blank" class="text-blue-300 font-semibold mt-3 hover:underline">linkedin.com/in/moghith-b-k</a>
+        </div>
+
+        <div class="p-6 rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl contact-card-glass flex flex-col items-center justify-center text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-300 mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.903.167 1.232-.347 1.232-.774v-2.584c-3.344.735-4.041-1.66-4.041-1.66-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.777.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .428.324.949 1.242.773c4.765-1.589 8.196-6.086 8.196-11.386c0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <h3 class="text-xl font-bold text-gray-100 mb-2">Explore my GitHub</h3>
+          <p class="text-gray-300">See my code and projects.</p>
+          <a href="https://github.com/MOGHITH-B-K" target="_blank" class="text-blue-300 font-semibold mt-3 hover:underline">github.com/MOGHITH-B-K</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-4 text-sm text-gray-400">
+      &copy; 2025 MOGHITH B K. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
